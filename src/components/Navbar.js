@@ -7,7 +7,7 @@ const NavBar = () => {
             <div className="col-md-6 d-flex justify-content-center">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
-                        <a class="navbar-brand" href="index.html"><img src={logoMarca} alt="Malibu Hype" title="Malibu Hype"/></a>
+                        <a className="navbar-brand" href="index.html"><img src={logoMarca} alt="Malibu Hype" title="Malibu Hype"/></a>
                         <a className="nav-link active" href="index.html"><h2 className="text-white">Malibu Hype</h2></a>
                     </div>
                 </nav>
