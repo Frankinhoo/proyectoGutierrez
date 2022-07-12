@@ -1,4 +1,4 @@
-import logoMarca from '../assets/zapatillas.png'
+import logoMarca from '../../assets/zapatillas.png'
 import CartWidget from './CartWidget';
     
 const NavBar = () => {
