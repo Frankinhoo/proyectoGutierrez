@@ -8,7 +8,6 @@ return (
             aria-labelledby="pills-profile-tab">
             <div className="mt-4 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" >
                 {items.map((product) => {
-                    console.log(product)
                     return <Item key={product.id} product={product} />
                 })}
             </div>
