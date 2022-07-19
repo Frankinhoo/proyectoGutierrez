@@ -1,5 +1,5 @@
 import React from 'react';
-import "./itemJs.css";
+import "../Item.js/itemJs.css";
 
 const ItemDetail = ({ products }) => {
     const { title, description, price, image } = products;
