@@ -1,8 +1,7 @@
 import React from 'react';
 import "../Item.js/itemJs.css";
 
-const ItemDetail = ({ products }) => {
-    const { title, description, price, image } = products;
+const ItemDetail = ({ title, description, price, image }) => {
 return (
     <div>
         <h2>{title}</h2>
