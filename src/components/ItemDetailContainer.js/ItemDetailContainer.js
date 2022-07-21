@@ -29,7 +29,7 @@ export const ItemDetailContainer = () => {
     
     useEffect(() => {
         getData
-            .then((product) => {setProducts(product);})
+            .then((data) => {setProducts(data);})
             .catch((error) => {console.log(error);})
             .finally(() => {setLoading(false);});
     }, [params.id]);
@@ -38,7 +38,7 @@ export const ItemDetailContainer = () => {
     console.log(products);
     return (
         <div className="text-center pt-5">
-            {loading ? <h3 className="pt-5">Cargando...</h3> : products && product.map(({ id, title, price, description, image }) => (
+            {loading ? <h3 className="pt-5">Cargando...</h3> : product && product.map(({ id, title, price, description, image }) => (
                 <ItemDetail key={id} id={id} title={title} price={price} description={description} image={image} />))}
         </div>
     )

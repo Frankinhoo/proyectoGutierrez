@@ -6,6 +6,7 @@ import Indumentaria from './components/Pages/Indumentaria';
 import Contacto from './components/Pages/Contacto';
 import Joyeria from './components/Pages/Joyeria';
 import Detail from './components/Pages/Detail';
+import Carrito from './components/Pages/Carrito';
 
 
 
@@ -19,7 +20,8 @@ function App() {
           <Route path='/Indumentaria' element={<Indumentaria/>} />
           <Route path='/Joyeria' element={<Joyeria />} />
           <Route path='/Contacto' element={<Contacto />} />
-          <Route path='/producto/:id' element={<Detail />} /> 
+          <Route path='/producto/:id' element={<Detail />}/>
+          <Route path='/Carrito' element={<Carrito />}/>
         </Routes>
       </BrowserRouter>
     </div>

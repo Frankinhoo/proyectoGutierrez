@@ -1,7 +1,6 @@
 import React from 'react'
-// import ItemDetail from '../ItemDetail.js/ItemDetail';
 import ItemDetailContainer from '../ItemDetailContainer.js/ItemDetailContainer';
-// import ItemDetailContainer from '../ItemDetailContainer.js/ItemDetailContainer';
+
 
 const Detail = () => {
 return (
