@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import "./itemJs.css"
 
 const item = ({ product }) => {
-    const {id, title,price,image} = product;
+    const { id, title, price, image } = product;
+    
     return (
                     <div className="col d-flex justify-content-center mb-4">
                         <div className="card shadow mb-1 bg-white rounded">

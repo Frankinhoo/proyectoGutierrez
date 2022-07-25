@@ -1,6 +1,12 @@
+import { useContext } from "react";
+import { CartContext } from "../CartContext.js/CartContext";
 
 
 const CartWidget = () => {
+
+    const cartContext = useContext(CartContext);
+    const { cart } = cartContext;
+
     return (
         <div className="col-md-6 d-flex align-items-center justify-content-center">
             <a href="/pages/clientes.html" id="usuario" title="Clientes" ><button type="button" className="btn btn-dark position-relative"><svg
@@ -36,7 +42,7 @@ const CartWidget = () => {
                 <path d="M17 17H6V3H4"></path>
                 <path d="M6 5l14 1-1 7H6"></path>
             </svg>
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span></button></a>
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cart.length}</span></button></a>
         </div>
     )
 }
